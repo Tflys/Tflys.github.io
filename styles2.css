@@ -1,0 +1,177 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 150px; /* Tamaño de la foto */
+    height: 150px;
+    object-fit: contain; /* Asegura que la imagen se vea completa sin recortes */
+    border: 3px solid #2c3e50; /* Borde visible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+}
+
+.info {
+    flex-grow: 1;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+}
+
+.contact-info strong {
+    color: #2c3e50;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+/* Aptitudes y habilidades */
+.aptitudes, .skills, .achievements, .languages, .interests {
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li strong {
+    color: #3498db;
+}
+
+/* Proyectos */
+.project {
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    color: #3498db;
+}
+
+.project p {
+    font-size: 1.1em;
+}
+
+/* Personalización de las secciones */
+h1, .contact-info, .container p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el footer de cita */
+p:last-of-type {
+    font-style: italic;
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo img {
+        margin-bottom: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+/* Efecto de desvanecimiento en la carga */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo para mostrar detalles de proyectos */
+.project.show-details p {
+    display: block;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Estilo inicial para los párrafos de los proyectos, ocultándolos */
+.project p {
+    display: none;
+}
+
+/* Efecto hover sobre los enlaces */
+.contact-info a {
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #2980b9;
+}
