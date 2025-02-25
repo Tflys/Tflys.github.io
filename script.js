@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Animación de desvanecimiento al cargar la página
-    document.body.classList.add('fade-in');
-
-    // Obtener el botón y el contenido
     const translateBtn = document.getElementById("translate-btn");
     const content = document.getElementById("content");
 
@@ -11,11 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    // Evento de traducción al hacer clic en el botón
+    let isEnglish = false; // Variable para controlar el idioma actual
+
     translateBtn.addEventListener("click", function () {
-        if (this.textContent.includes("Inglés")) {
-            this.textContent = "Traducir a Español";
+        if (!isEnglish) {
+            // Traducir a inglés
             content.innerHTML = `
+                <button id="translate-btn">Translate to Spanish</button> <!-- Reinsertamos el botón -->
+                
                 <h2>Work Experience</h2>
                 <div class="experience">
                     <h3>Founder and General Manager</h3>
@@ -39,9 +38,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     <li>English: Intermediate (B1)</li>
                 </ul>
             `;
+
+            isEnglish = true;
         } else {
-            this.textContent = "Traducir a Inglés";
-            location.reload(); // Recarga la página para volver al español
+            location.reload(); // Volver a la versión en español recargando la página
         }
+
+        // Reasignar el evento al botón después de actualizar el contenido
+        document.getElementById("translate-btn").addEventListener("click", arguments.callee);
     });
 });
+
