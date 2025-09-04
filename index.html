@@ -1,85 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum - DAW Prácticas</title>
-    <link rel="stylesheet" href="styles2.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Currículum Francisco Alabarce Ortiz - DAW, DevOps, Automatización" />
+    <title>Francisco Alabarce Ortiz - Currículum DAW</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div id="content">
-        <!-- <button id="translate-btn">Traducir a Inglés</button> Botón dentro de #content -->
+  <header>
+    <div class="header-container">
+      <figure class="photo">
+        <img src="foto.png" alt="Foto de Francisco Alabarce Ortiz" width="150" height="150" />
+      </figure>
+      <div class="info">
 
-        <div class="header">
-            <div class="photo">
-                <img src="foto.png" alt="Foto de Francisco Alabarce Ortiz">
-            </div>
-            <div class="info">
-                <h1>Francisco Alabarce Ortiz</h1>
-                <div class="contact-info">
-                    <p>Teléfono: 665 584 327 <strong></strong> | Email: <strong>franalabarce@gmail.com</strong></p>
-                    <p>LinkedIn/GitHub/Portfolio: <strong><a href="https://github.com/Tflys">https://github.com/Tflys</a></strong></p>
-                    <p>Dirección: calle murillo 1, 2ºA, Salobreña (Granada)</p>
-                    <p>Disponibilidad geografica carnet B1 - coche propio</p>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container">        
-            <h2>Experiencia Laboral</h2>
+<div class="actions">
+  <div class="lang-switcher">
+  <button id="lang-es" class="icon-btn flag-btn" title="Español" aria-label="Cambiar a español">
+      <!-- Bandera de España (SVG) -->
+      <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="60" height="40" fill="#AA151B"/>
+        <rect y="10" width="60" height="20" fill="#F1BF00"/>
+      </svg>
+    </button>
+     <span class="lang-label">ES</span>
 
-            <div class="experience">
-                <h3>Prácticas de Desarrollo de Aplicaciones Web</h3>
-                <p><strong>Kyndryl</strong> | 2025 </p>
-                <p>Participación en tareas de automatización de procesos usando <strong>Ansible</strong> <strong>Linux</strong>. Apoyo al equipo de Site Reliability Engineering (SRE) en la monitorización de sistemas, gestión de servidores y herramientas como <strong>Docker</strong> y <strong>AWX</strong>. Desarrollo de scripts para la optimización de flujos de trabajo y tratamiento de datos.
-                </p>
-            </div>
+  <button id="lang-en" class="icon-btn flag-btn" title="English" aria-label="Switch to English">
+      <!-- Bandera de UK (SVG simplificada) -->
+      <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="60" height="40" fill="#012169"/>
+        <polygon points="0,0 24,0 60,24 60,40 36,40 0,16" fill="#FFF"/>
+        <polygon points="60,0 36,0 0,24 0,40 24,40 60,16" fill="#FFF"/>
+        <polygon points="0,0 27,0 60,22 60,28 33,10 0,28" fill="#C8102E"/>
+        <polygon points="60,0 33,0 0,22 0,28 27,10 60,28" fill="#C8102E"/>
+        <rect x="25" width="10" height="40" fill="#FFF"/>
+        <rect y="15" width="60" height="10" fill="#FFF"/>
+        <rect x="26" width="8" height="40" fill="#C8102E"/>
+        <rect y="16" width="60" height="8" fill="#C8102E"/>
+      </svg>
+    </button>
+    <span class="lang-label">EN</span>
+  </div>
 
-            <div class="experience">
-                <h3>Fundador y Gerente General</h3>
-                <p><strong>Empresa de Desatascos Ortiz S.L.</strong> | 2010 - Actualidad</p>
-            </div>
-
-            <h2>Perfil Profesional</h2>
-            <p>
-                Soy estudiante de Desarrollo de Aplicaciones Web (DAW), realicé las prácticas en <strong>Kyndryl</strong>, donde colaboré con ingenieros SRE en tareas de automatización, gestión de servidores y contenedores. 
-                Como parte de estas prácticas, he desarrollado una interfaz web con <strong>FullCalendar</strong> que permite visualizar y filtrar automatizaciones ejecutadas por Ansible, ofreciendo distintas vistas (mensual, semanal, diaria) para facilitar el seguimiento de tareas.
-                Apasionado por la eficiencia y el control de sistemas, utilizo herramientas como <strong>nodeJS</strong>, <strong>Docker</strong>, <strong>Laravel</strong> y <strong>Python</strong> para mejorar procesos y flujos de trabajo.
-            </p>
-            
-            
-            <h2>Habilidades Técnicas</h2>
-            
-            <ul>
-                <li><strong>Cloud:</strong> AWS (EC2, S3, IAM), Microsoft Azure (VMs, Storage)</li>
-                <li><strong>Contenedores y Virtualización:</strong> Docker, Kubernetes (básico), VirtualBox, WSL</li>
-                <li><strong>Infraestructura:</strong> Linux, Redes, Seguridad básica</li>
-                <li><strong>Lenguajes:</strong> Python, Bash, PHP, JavaScript</li>
-                <li><strong>Back-End:</strong> PHP, Laravel, MySQL, MariaDB, Python</li>
-                <li><strong>Front-End:</strong> HTML5, CSS3, Bootstrap, FullCalendar</li>
-                <li><strong>Control de versiones:</strong> Git, GitHub</li>
-                <li><strong>CI/CD y Automatización:</strong> GitHub Actions, Ansible</li>
-            </ul>
+  <button id="download-pdf-btn" class="icon-btn" title="PDF" aria-label="Descargar currículum en PDF">📄</button>
+</div>
 
 
-            <h2>Formación Académica</h2>
-            <p><strong>Técnico Superior en Desarrollo de Aplicaciones Web (DAW)</strong></p>
-            <p>IES Francisco Javier De Burgos </p>
-            <p><strong>Técnico Grado Medio en Instalaciones Eléctricas y Automáticas</strong></p>
-            <p>Centro San Agustín | Años: 19/21</p>
-            <hr>
 
-            <h2>Idiomas</h2>
-            <ul class="languages">
-                <li>Español: Nativo</li>
-                <li>Inglés: Nivel Intermedio (B1). Preparando certificación oficial B2</li>
-            </ul>
-        </div>
+<h1>Francisco Alabarce Ortiz</h1>
+
+
+        <nav aria-label="Información de contacto">
+          <ul class="contact-list">
+            <li><span data-i18n="contact.phone_label"></span>: <a href="tel:+34665584327">665 584 327</a></li>
+            <li><span data-i18n="contact.email_label"></span>: <a href="mailto:franalabarce@gmail.com">franalabarce@gmail.com</a></li>
+            <li><a href="https://github.com/Tflys" target="_blank" rel="noopener noreferrer" data-i18n="contact.github"></a></li>
+            <li><span data-i18n="contact.address_label"></span>: Calle Murillo 1, 2ºA, Salobreña (Granada)</li>
+            <li><span data-i18n="contact.geo_label"></span>: <span data-i18n="contact.geo_value"></span></li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <hr />
+  </header>
 
-    <footer>
-        <p>Francisco Alabarce Ortiz | Teléfono:665 584 327  | Email: franalabarce@gmail.com</p>
-        <script src="script.js"></script>
-    </footer>
+  <main>
+    <!-- Experiencia -->
+    <section aria-labelledby="experiencia-laboral">
+      <h2 id="experiencia-laboral" data-i18n="sections.experience.title"></h2>
+
+      <article class="experience">
+        <h3 data-i18n="experience.kyndryl.title"></h3>
+        <p><strong>Kyndryl</strong> | <span data-i18n="experience.kyndryl.year"></span></p>
+        <p data-i18n="experience.kyndryl.desc"></p>
+      </article>
+
+      <article class="experience">
+        <h3 data-i18n="experience.empresa.title"></h3>
+        <p><strong>Empresa de Desatascos Ortiz S.L.</strong> | <span data-i18n="experience.empresa.years"></span></p>
+        <ul>
+          <li data-i18n="experience.empresa.b1"></li>
+          <li data-i18n="experience.empresa.b2"></li>
+          <li data-i18n="experience.empresa.b3"></li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Perfil -->
+    <section aria-labelledby="perfil-profesional">
+      <h2 id="perfil-profesional" data-i18n="sections.profile.title"></h2>
+      <p data-i18n="sections.profile.desc"></p>
+    </section>
+
+    <!-- Habilidades -->
+    <section aria-labelledby="habilidades-tecnicas">
+      <h2 id="habilidades-tecnicas" data-i18n="sections.skills.title"></h2>
+      <ul class="skills-list">
+        <li><strong data-i18n="skills.cloud.label"></strong>: <span data-i18n="skills.cloud.value"></span></li>
+        <li><strong data-i18n="skills.containers.label"></strong>: <span data-i18n="skills.containers.value"></span></li>
+        <li><strong data-i18n="skills.infra.label"></strong>: <span data-i18n="skills.infra.value"></span></li>
+        <li><strong data-i18n="skills.langs.label"></strong>: <span data-i18n="skills.langs.value"></span></li>
+        <li><strong data-i18n="skills.backend.label"></strong>: <span data-i18n="skills.backend.value"></span></li>
+        <li><strong data-i18n="skills.frontend.label"></strong>: <span data-i18n="skills.frontend.value"></span></li>
+        <li><strong data-i18n="skills.vcs.label"></strong>: <span data-i18n="skills.vcs.value"></span></li>
+        <li><strong data-i18n="skills.cicd.label"></strong>: <span data-i18n="skills.cicd.value"></span></li>
+      </ul>
+    </section>
+
+    <!-- Formación -->
+    <section aria-labelledby="formacion-academica">
+      <h2 id="formacion-academica" data-i18n="sections.education.title"></h2>
+      <dl>
+        <dt data-i18n="education.daw.title"></dt>
+        <dd>IES Francisco Javier De Burgos</dd>
+
+        <dt data-i18n="education.electrica.title"></dt>
+        <dd data-i18n="education.electrica.center"></dd>
+      </dl>
+    </section>
+
+    <!-- Idiomas -->
+    <section aria-labelledby="idiomas">
+      <h2 id="idiomas" data-i18n="sections.languages.title"></h2>
+      <ul class="languages">
+        <li data-i18n="languages.es"></li>
+        <li data-i18n="languages.en"></li>
+      </ul>
+    </section>
+
+    <!-- Proyectos -->
+    <section aria-labelledby="proyectos-personales" class="projects">
+      <h2 id="proyectos-personales" data-i18n="sections.projects.title"></h2>
+      <ul>
+        <li>
+          <strong data-i18n="projects.fullcalendar.title"></strong><br />
+          <span data-i18n="projects.fullcalendar.desc"></span>
+          <a href="https://github.com/Tflys/fullcalendar-ansible" target="_blank" rel="noopener noreferrer" data-i18n="projects.fullcalendar.cta"></a>
+        </li>
+        <li>
+          <strong data-i18n="projects.scripts.title"></strong><br />
+          <span data-i18n="projects.scripts.desc"></span>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <p>
+      &copy; 2025 Francisco Alabarce Ortiz —
+      <a href="mailto:franalabarce@gmail.com">franalabarce@gmail.com</a> —
+      <a href="https://github.com/Tflys" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
